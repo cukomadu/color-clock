@@ -18,13 +18,13 @@ var startClock = function() {
     hexSecs = addString(hexSecs)
 
     var hexBgdColor1 = '#' + hexHrs + hexMins + hexSecs
-    var hexBgdColor2 = '#' + hexSecs + hexMins + hexHrs
+   // var hexBgdColor2 = '#' + hexSecs + hexMins + hexHrs
     //console.log (hexBgdColor2)
 
   
  // Write to DOM Elements
     var changeBgdColor = document.querySelector("#radial-background")
-    changeBgdColor.style.background = 'radial-gradient(circle,' + hexBgdColor1 + ','+ hexBgdColor2 + ')'
+    changeBgdColor.style.background = 'radial-gradient(circle,' + hexBgdColor1 + ',rgba(242,119,16,0.8))'
                                     
 
     document.querySelector("#clock").innerHTML = h + ":" + m + ":" + s
